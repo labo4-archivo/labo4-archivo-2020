@@ -18,9 +18,9 @@ function preload(){
     videos.length = 28;
     colors.lenght = videos.length;
 
-    // for(let videoIndex = 0; videoIndex < videos.length; videoIndex++){
-    //     videos[videoIndex] = loadImage("../assets/01.png");
-    // }
+    for(let videoIndex = 0; videoIndex < videos.length; videoIndex++){
+        videos[videoIndex] = loadImage("videos/01.png");
+    }
 }
 
 function setup(){
@@ -63,7 +63,7 @@ function draw(){
             text(videoIndex, columnsCounter*videoWidth, (rowsCounter*videoHeight)+50);
 
         
-        //image(videos[videoIndex], videoWidth*columnsCounter, videoHeight*rowsCounter, videoWidth, videoHeight);
+        image(videos[videoIndex], videoWidth*columnsCounter, videoHeight*rowsCounter, videoWidth, videoHeight);
 
         columnsCounter++;
 
