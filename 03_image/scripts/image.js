@@ -1,7 +1,7 @@
-let img; 
+let img;
 
 function preload() {
-  img = loadImage("../assets/neptuno.jpg");
+  img = loadImage("assets/neptuno.jpg");
 }
 
 function setup() {
